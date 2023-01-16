@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2023 VoltageOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,15 +33,15 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := xtended_daisy
+PRODUCT_NAME := voltage_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -56,7 +56,5 @@ TARGET_SHIP_GCAM_GO := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := TogoFire
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_DONATE_URL := https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PJ3GD9AL6RPBW&source=url
+# VoltageOS Stuffs
+VOLTAGE_BUILD_TYPE := OFFICIAL

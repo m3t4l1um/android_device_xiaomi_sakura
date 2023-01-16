@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_daisy.mk
+    $(LOCAL_DIR)/voltage_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_daisy-user \
-    xtended_daisy-userdebug \
-    xtended_daisy-eng
+    voltage_daisy-user \
+    voltage_daisy-userdebug \
+    voltage_daisy-eng
 
