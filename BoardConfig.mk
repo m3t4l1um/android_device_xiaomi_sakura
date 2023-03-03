@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -129,6 +129,9 @@ SOONG_CONFIG_XIAOMI_MSM8953_BIOMETRICS_HAL_MODULES := \
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true

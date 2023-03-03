@@ -347,6 +347,13 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMwqemAdapter/MwqemAdapter</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.lineage.health</name>
+        <interface>
+            <name>IChargingControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <sepolicy>
         <version>0.0</version>
     </sepolicy>
