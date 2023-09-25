@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_daisy",
+    name: "libinit_sakura",
     recovery_available: true,
-    srcs: ["init_daisy.cpp"],
+    srcs: ["init_sakura.cpp"],
     whole_static_libs: ["libbase"],
     include_dirs: [
         "system/libbase/include",

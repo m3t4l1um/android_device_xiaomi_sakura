@@ -30,8 +30,8 @@ $(call inherit-product-if-exists, vendor/ExclusivePack/config.mk)
 # Inherit from MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
-# Inherit from daisy device
-$(call inherit-product, device/xiaomi/daisy/device.mk)
+# Inherit from sakura device
+$(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common VoltageOS stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
@@ -40,21 +40,21 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := daisy
-PRODUCT_NAME := voltage_daisy
+PRODUCT_DEVICE := sakura
+PRODUCT_NAME := voltage_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi A2 Lite
+PRODUCT_MODEL := Redmi 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
-TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_PIXEL_CHARGER := false
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_KERNEL_DAISY := true
+TARGET_BUILD_KERNEL_SAKURA := true
 
 TARGET_SHIP_GCAM_GO := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # VoltageOS Stuffs
-VOLTAGE_BUILD_TYPE := OFFICIAL
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
